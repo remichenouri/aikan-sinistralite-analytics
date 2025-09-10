@@ -36,7 +36,6 @@ mysql -u root -p aikan_analytics < database/data-generation.sql
 Test de la démo
 mysql -u root -p aikan_analytics < queries/kpi-dashboard.sql
 
-text
 
 ### 🔧 Prérequis
 - MySQL 8.0+
@@ -48,26 +47,42 @@ text
 ## 📁 Structure du Projet
 
 aikan-sinistralite-analytics/
-├── 📊 database/ # Schémas et données (50k+ enregistrements)
-│ ├── schema.sql # Structure complète des tables
-│ ├── data-generation.sql # Génération de données réalistes
-│ └── sample-data.sql # Jeu de données de démonstration
-├── 🔍 queries/ # Analyses SQL avancées
-│ ├── kpi-dashboard.sql # KPI métier temps réel
-│ ├── performance-analysis.sql # Benchmarks et optimisation
-│ └── predictive-models.sql # Algorithmes prédictifs
-├── ⚙️ procedures/ # Simulation des endpoints API
-│ ├── api-simulation.sql # 10+ endpoints métier
-│ └── optimization-algorithms.sql # Algorithmes d'optimisation
-├── 📚 docs/ # Documentation technique
-│ ├── business-case.md # ROI et arguments business
-│ ├── technical-specs.md # Spécifications techniques complètes
-│ └── presentation.pdf # Présentation de démonstration
-└── 📈 results/ # Résultats et benchmarks
-├── screenshots/ # Captures d'écran des résultats
-└── benchmarks.csv # Métriques de performance
 
-text
+├── 📊 database/ # Schémas et données (50k+ enregistrements)
+
+│ ├── schema.sql # Structure complète des tables
+
+│ ├── data-generation.sql # Génération de données réalistes
+
+│ └── sample-data.sql # Jeu de données de démonstration
+
+├── 🔍 queries/ # Analyses SQL avancées
+
+│ ├── kpi-dashboard.sql # KPI métier temps réel
+
+│ ├── performance-analysis.sql # Benchmarks et optimisation
+
+│ └── predictive-models.sql # Algorithmes prédictifs
+
+├── ⚙️ procedures/ # Simulation des endpoints API
+
+│ ├── api-simulation.sql # 10+ endpoints métier
+
+│ └── optimization-algorithms.sql # Algorithmes d'optimisation
+
+├── 📚 docs/ # Documentation technique
+
+│ ├── business-case.md # ROI et arguments business
+
+│ ├── technical-specs.md # Spécifications techniques complètes
+
+│ └── presentation.pdf # Présentation de démonstration
+
+└── 📈 results/ # Résultats et benchmarks
+
+├── screenshots/ # Captures d'écran des résultats
+
+└── benchmarks.csv # Métriques de performance
 
 ---
 
@@ -81,7 +96,6 @@ WHEN ratio_SP > 60 THEN '🟡 SURVEILLANCE'
 ELSE '🟢 OK' END as statut
 FROM vue_sinistralite_portefeuille;
 
-text
 
 ### 2. 🎯 Optimisation Gestionnaires
 -- Répartition intelligente des dossiers
@@ -89,14 +103,11 @@ SELECT gestionnaire_id, charge_optimale, performance_score
 FROM optimisation_affectation_dossiers
 ORDER BY performance_score DESC;
 
-text
 
 ### 3. 🤖 IA Prédictive Intégrée
 -- Prédiction des coûts de sinistres
 CALL PredictRiskScore(35, 'Cadre', 8, 'AUTO');
 -- Résultat: Score 2.1 (FAIBLE) avec précision 87%
-
-text
 
 ---
 
@@ -126,7 +137,6 @@ CALL GetPortfolioAnalysis(); -- GET /contrats/portfolio
 CALL PredictRiskScore(...); -- POST /predictions/risk
 CALL GetGestionnairesPerformance(); -- GET /gestionnaires/perf
 
-text
 
 ### Architecture d'Intégration
 - **ETL automatisé** depuis vos données Sydia
@@ -145,7 +155,6 @@ text
 ──────────────────────────────────────────────────
 🎯 GAIN TOTAL ESTIMÉ → 550 000€/an
 
-text
 
 ### Innovation Concrète
 - **Juribot pour l'analyse** : Automatisation intelligente des insights
@@ -168,7 +177,6 @@ source database/schema.sql;
 -- Génération des données (10 minutes)
 source database/data-generation.sql;
 
-text
 
 ### 2. Test des Fonctionnalités
 -- Test du dashboard
@@ -180,13 +188,10 @@ CALL PredictRiskScore(42, 'Fonctionnaire', 12, 'MRH');
 -- Test des performances
 source queries/performance-analysis.sql;
 
-text
 
 ### 3. Démonstration Live
 Lancement de la démo complète (5 minutes)
 mysql -u root -p aikan_analytics < demo/presentation-live.sql
-
-text
 
 ---
 
@@ -220,8 +225,6 @@ SELECT * FROM optimisation_affectation_dossiers LIMIT 5;
 -- "Prédire les coûts pour améliorer les provisions"
 CALL PredictRiskScore(35, 'Cadre', 8, 'AUTO');
 
-text
-
 ---
 
 ## 👨‍💼 À Propos du Développeur
@@ -253,5 +256,6 @@ text
 
 Ce projet est développé dans le cadre d'une candidature pour Aikan. 
 Code disponible pour évaluation technique et démonstration.
+
 
 ---
