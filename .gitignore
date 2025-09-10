@@ -1,0 +1,36 @@
+# Fichiers temporaires
+*.log
+*.tmp
+*.temp
+~$*.docx
+~$*.xlsx
+
+# Configuration locale
+.env
+.env.local
+config.local.*
+
+# Base de données
+*.db
+*.sqlite
+*.mdb
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Credentials (sécurité)
+*password*
+*secret*
+*credential*
