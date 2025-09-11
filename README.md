@@ -208,25 +208,6 @@ mysql -u root -p aikan_analytics < demo/presentation-live.sql
 
 ---
 
-## 🎤 Présentation & Démonstration
-
-### Format de Présentation (5 minutes)
-1. **Défi Aikan** (1 min) : Vos 470k appels et millions de données
-2. **Solution** (1 min) : Simulateur d'analyse prédictive  
-3. **Démo Live** (3 mins) : 3 requêtes qui changent tout
-
-### Script de Démonstration
--- "Voici comment identifier vos portefeuilles les plus risqués"
-SELECT * FROM vue_sinistralite_portefeuille WHERE ratio_SP > 60;
-
--- "Comment répartir intelligemment les dossiers"
-SELECT * FROM optimisation_affectation_dossiers LIMIT 5;
-
--- "Prédire les coûts pour améliorer les provisions"
-CALL PredictRiskScore(35, 'Cadre', 8, 'AUTO');
-
----
-
 ## 👨‍💼 À Propos du Développeur
 
 **Rémi Chenouri** - Data Analyst Senior
@@ -259,3 +240,4 @@ Code disponible pour évaluation technique et démonstration.
 
 
 ---
+
