@@ -193,19 +193,6 @@ mysql -u root -p aikan_analytics < demo/presentation-live.sql
 
 ---
 
-## 📈 Résultats de Démonstration
-
-### KPI Temps Réel
-![Dashboard KPI](results/screenshots/dashboard-kpi.png)
-
-### Performance des Gestionnaires  
-![Gestionnaires](results/screenshots/gestionnaires-performance.png)
-
-### Prédictions IA
-![Predictions](results/screenshots/predictions-ia.png)
-
----
-
 ## 👨‍💼 À Propos du Développeur
 
 **Rémi Chenouri** - Data Analyst Senior
@@ -238,5 +225,6 @@ Code disponible pour évaluation technique et démonstration.
 
 
 ---
+
 
 
