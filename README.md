@@ -7,8 +7,6 @@
 [![Performance](https://img.shields.io/badge/Performance-Optimized-brightgreen.svg)](https://github.com/remichenouri)
 
 > **Système d'analyse prédictive de sinistralité IARD conçu pour optimiser les processus Aikan**
->
-> *"Je ne postule pas, je propose une évolution concrète de vos outils Sydia"*
 
 ---
 
@@ -240,4 +238,5 @@ Code disponible pour évaluation technique et démonstration.
 
 
 ---
+
 
